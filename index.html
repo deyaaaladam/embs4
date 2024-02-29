@@ -139,11 +139,16 @@ header .current-date {
 #eventPopup {
   display: none;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7); /* Background with transparency */
   color: white;
   padding: 10px;
   border-radius: 5px;
+  width: fit-content; /* Adjust width to fit content */
+  left: 50%; /* Position at the center horizontally */
+  top: 50%; /* Position at the center vertically */
+  transform: translate(-50%, -50%); /* Center the element */
 }
+
 
 .days li.active {
   color: #fff;
